@@ -30,7 +30,7 @@
   row-gap: 32px;
 }
 
-.search {
+.form {
 }
 
 .input {
@@ -74,7 +74,7 @@
 .loader {
 }
 
-.pictures {
+.gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
