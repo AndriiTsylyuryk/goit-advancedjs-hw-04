@@ -4,8 +4,8 @@
   | default @import url()
   |============================
 */
-@import url('./reset.css');
-@import url('./header.css');
+@import url("./reset.css");
+@import url("./header.css");
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -142,7 +142,7 @@
 }
 .loader::before,
 .loader::after {
-  content: '';
+  content: "";
   box-sizing: border-box;
   position: absolute;
   inset: 0px;
@@ -193,7 +193,7 @@
 
 .loader1::before,
 .loader1::after {
-  content: '';
+  content: "";
   box-sizing: border-box;
   position: absolute;
   inset: 0px;

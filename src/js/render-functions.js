@@ -1,14 +1,14 @@
-import SimpleLightbox from 'simplelightbox';
+import SimpleLightbox from "simplelightbox";
 
-import 'simplelightbox/dist/simple-lightbox.min.css';
+import "simplelightbox/dist/simple-lightbox.min.css";
 
-const container = document.querySelector('.gallery');
+const container = document.querySelector(".gallery");
 
 // let lightbox;
-const lightbox = new SimpleLightbox('.gallery a', {
-      captionsData: 'alt',
-      captionDelay: 250,
-    })
+const lightbox = new SimpleLightbox(".gallery a", {
+  captionsData: "alt",
+  captionDelay: 250,
+});
 
 function imageTemp(image) {
   return `
@@ -31,11 +31,11 @@ function imageTemp(image) {
 }
 
 function imagesTemplate(arr) {
-  return arr.map(imageTemp).join('');
+  return arr.map(imageTemp).join("");
 }
 
 export function imagesRender(images) {
   const markup = imagesTemplate(images);
-  container.insertAdjacentHTML('beforeend', markup);
-    lightbox.refresh();
+  container.insertAdjacentHTML("beforeend", markup);
+  lightbox.refresh();
 }
